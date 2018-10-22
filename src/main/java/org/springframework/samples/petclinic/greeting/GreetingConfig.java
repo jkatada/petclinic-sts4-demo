@@ -8,10 +8,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class GreetingConfig {
 
-	@Bean
-	@ConditionalOnClass(Saluation.class)
-	@ConditionalOnBean(GoodBye.class)
-	public Greeting greeting() {
-		return new Greeting("Salutations");
-	}
+    @Bean
+    @ConditionalOnClass(Saluation.class)
+    @ConditionalOnBean(GoodBye.class)
+    public Greeting greeting() {
+        return new Greeting("Salutations");
+    }
 }

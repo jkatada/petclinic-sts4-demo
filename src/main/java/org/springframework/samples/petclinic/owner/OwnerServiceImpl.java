@@ -6,12 +6,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class OwnerServiceImpl implements OwnerService {
 
-	@Autowired
-	OwnerRepository repository;
-	
-	@Override
-	public void foo() {
-		System.out.println("OwnerServiceImpl.foo()");
-	}
+    @Autowired
+    OwnerRepository repository;
+
+    @Override
+    public void foo() {
+        System.out.println("OwnerServiceImpl.foo()");
+    }
 
 }
